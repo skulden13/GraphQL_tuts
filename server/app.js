@@ -7,6 +7,7 @@ const app = express();
 // GraphQL Middleware
 app.use('/graphql', graphqlHTTP({
   schema,
+  graphiql: true,
 }));
 
 app.listen(4000, () => {
