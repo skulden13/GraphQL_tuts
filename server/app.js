@@ -2,8 +2,12 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+// Allow CORS requests
+app.use(cors());
 
 // Connect to cloud.mongodb.com
 mongoose.connect('mongodb+srv://denis:my_super_password_123@cluster0-48jky.mongodb.net/graphql-tuts?retryWrites=true&w=majority', {useNewUrlParser: true});
