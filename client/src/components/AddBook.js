@@ -52,6 +52,7 @@ class AddBook extends React.Component {
   render() {
     return (
       <div>
+        <h2>Add new book</h2>
         <form
           id="add-book"
           onSubmit={this.onSubmit.bind(this)}
