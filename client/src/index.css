@@ -3,10 +3,99 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #eee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li {
   margin-bottom: 1rem;
+}
+
+#main {
+  padding: 0;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}
+
+#main h1 {
+  color: #444;
+  text-align: center;
+}
+
+#book-list {
+  padding: 0;
+}
+
+#book-list li {
+  display: inline-block;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #880e4f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #880e4f;
+}
+
+/* Add Book Form */
+#add-book-container {
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  text-align: right;
+}
+
+#add-book .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#add-book label {
+  padding: 10px;
+}
+
+#add-book select,
+#add-book input {
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  min-height: 30px;
+  width: 220px;
+  font-size: 1rem;
+}
+
+#add-book button {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  background: #ad1457;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Book Details */
+#book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #ad1457;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  color: #fff;
+  padding: 30px;
 }

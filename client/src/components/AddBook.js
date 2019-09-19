@@ -51,7 +51,7 @@ class AddBook extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="add-book-container">
         <h2>Add new book</h2>
         <form
           id="add-book"
